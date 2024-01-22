@@ -15,4 +15,13 @@ func main() {
 
 	num3 := "Our Green Earth";
 	fmt.Println("num3 :: ", num3, " and it is declared using Walrus Operator.");
+
+	var a, b int = 3, 4
+	fmt.Println("value of a = ", a, " and for b = ", b)
+
+	c, d := 44, 45
+	fmt.Println("value of c = ", c, " and for d = ", d)
+
+	var e, f = 3442, 1223
+	fmt.Println("value of e = ", e, " and for f = ", f)
 }
