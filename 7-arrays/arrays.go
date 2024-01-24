@@ -4,14 +4,20 @@ import "fmt"
 
 func main() {
 	var arr [3]int
+	fmt.Println("Empty array : ", arr)
 
-	arr[0], arr[1] = 2, 3
-	arr[2] = 4
+	arr[1], arr[2] = 3, 4
+	fmt.Println("Assigning values : ", arr)
+	fmt.Println("Fetch value of arr[2] : ", arr[2])
+	fmt.Println("Length of array : ", len(arr))
 
-	fmt.Printf("Length of array is - %d \n\n", len(arr))
+	fmt.Println("\nNext Array")
 
-	for i, v := range arr {
-		fmt.Printf("Value at index %d is %v \n", i, v)
+	barr := [5]int{11, 22, 33, 44, 55}
+	fmt.Println("Decl array barr : ", barr)
+
+	for i, v := range barr {
+		fmt.Println("From for loop, Value at index : ", i, " is : ", v)
 	}
-
 }
+
